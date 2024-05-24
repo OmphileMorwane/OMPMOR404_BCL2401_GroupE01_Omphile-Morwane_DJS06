@@ -56,6 +56,7 @@ console.log(filteredProvinces.length);// logging the count of the remaining prov
 const containsSArray = names.map((name) =>
   name.split("").some((letter) => letter.toLowerCase() === "s")
 );
+console.log(containsSArray);
 
 
 
