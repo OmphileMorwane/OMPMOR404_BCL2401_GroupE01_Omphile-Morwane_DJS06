@@ -46,6 +46,15 @@ const nameLength = names.map((name) => name.length);
 const alphabeticallySortedProvinces = [...provinces].sort();
  console.log(alphabeticallySortedProvinces);
 
+//Function to filter out Province names with 'Cape"
+const filteredProvinces = provinces.filter(
+(province) => !province.includes("Cape")
+);
+console.log(filteredProvinces);
+
+
+
+
 // A list of products with prices:
 const products = [
   { product: "banana", price: "2" },
