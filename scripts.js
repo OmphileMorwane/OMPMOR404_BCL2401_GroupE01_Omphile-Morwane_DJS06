@@ -77,4 +77,8 @@ const products = [
 ];
 
 //Encapsulating Product info into a single object
-const productsInfo = {}
+const productsInfo = {
+
+  // Iterates over the products array then logs product names
+  productNames: products.map((name) => name.product).join(", "),
+}
