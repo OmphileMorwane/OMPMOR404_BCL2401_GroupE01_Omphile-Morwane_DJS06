@@ -117,6 +117,14 @@ const productsInfo = {
 
     return `Highest: ${highestPricedItem.product}. Lowest: ${lowestPricedItem.product}.`;
   })(),
+  // Recreating the products object with keys 'name' and 'cost' with their original values.
+  transformedProducts: products.reduce((acc, product) => {
+    acc.push({
+      name: product.product,
+      cost: isNaN(parseInt(product.price)) ? 0 : parseInt(product.price),
+    });
+    return acc;
+  }, []), // Wrapping product info in an array
 
 
 }
