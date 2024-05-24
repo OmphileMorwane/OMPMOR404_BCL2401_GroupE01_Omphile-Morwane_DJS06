@@ -24,6 +24,11 @@ names.forEach((name) => {
   console.log(name);
 });
 
+//ForEach Basics-log each Province
+provinces.forEach((province) => {
+  console.log(province);
+});
+
 
 // A list of products with prices:
 const products = [
