@@ -66,9 +66,6 @@ const nameWithProvinceMap = names.reduce((acc, name, index) => {
 
 console.log(nameWithProvinceMap);
 
-
-
-
 // A list of products with prices:
 const products = [
   { product: "banana", price: "2" },
@@ -78,3 +75,6 @@ const products = [
   { product: "coffee", price: 10 },
   { product: "tea", price: "" },
 ];
+
+//Encapsulating Product info into a single object
+const productsInfo = {}
