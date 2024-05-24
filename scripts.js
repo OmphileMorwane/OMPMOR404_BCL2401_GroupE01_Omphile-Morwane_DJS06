@@ -38,9 +38,13 @@ names.forEach((name, index) => {
 const uppercaseProvinces = provinces.map((province) => province.toUpperCase());
 console.log(uppercaseProvinces);
 
-//
+//Function to calculate the length of each name
 const nameLength = names.map((name) => name.length);
       console.log(nameLength);
+
+//Alphabetically sorting the Provinces
+const alphabeticallySortedProvinces = [...provinces].sort();
+ console.log(alphabeticallySortedProvinces);
 
 // A list of products with prices:
 const products = [
