@@ -86,4 +86,13 @@ const productsInfo = {
   productsFilteredByNameLength: products
     .filter((name) => name.product.length <= 5)
     .map((name) => name.product),
+
+  // Price
+  totalPrice: products
+  .filter((product) => product.price && product.price !== " ") // Filtering out products without prices.
+  .reduce((acc, product) => {
+    acc += parseInt(product.price); // Converting string prices to number and add to accumulator to calculate total price.
+    return acc;
+  }, 0),
+
 }
