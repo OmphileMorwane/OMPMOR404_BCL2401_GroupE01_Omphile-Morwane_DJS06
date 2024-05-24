@@ -38,6 +38,10 @@ names.forEach((name, index) => {
 const uppercaseProvinces = provinces.map((province) => province.toUpperCase());
 console.log(uppercaseProvinces);
 
+//
+const nameLength = names.map((name) => name.length);
+      console.log(nameLength);
+
 // A list of products with prices:
 const products = [
   { product: "banana", price: "2" },
