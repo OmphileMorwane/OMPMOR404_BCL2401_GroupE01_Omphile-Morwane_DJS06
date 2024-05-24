@@ -95,4 +95,10 @@ const productsInfo = {
     return acc;
   }, 0),
 
+  // Concatenating all product names into a single string using reduce method.
+  concatenatedProductNames: products.reduce(
+    (acc, product) => acc + product.product,
+    ""
+  ),
+
 }
