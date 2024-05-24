@@ -127,4 +127,6 @@ const productsInfo = {
   }, []), // Wrapping product info in an array
 
 
-}
+};
+
+console.log(productsInfo); // Single console.log for the product information.
