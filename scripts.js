@@ -81,4 +81,9 @@ const productsInfo = {
 
   // Iterates over the products array then logs product names
   productNames: products.map((name) => name.product).join(", "),
+
+  // Filtering out products with names longer than 5 characters
+  productsFilteredByNameLength: products
+    .filter((name) => name.product.length <= 5)
+    .map((name) => name.product),
 }
