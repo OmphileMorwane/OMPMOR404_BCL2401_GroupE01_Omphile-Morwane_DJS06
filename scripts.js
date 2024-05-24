@@ -46,11 +46,16 @@ const nameLength = names.map((name) => name.length);
 const alphabeticallySortedProvinces = [...provinces].sort();
  console.log(alphabeticallySortedProvinces);
 
-//Function to filter out Province names with 'Cape"
+//Function to filter out Province names with 'Cape" 
 const filteredProvinces = provinces.filter(
 (province) => !province.includes("Cape")
 );
-console.log(filteredProvinces);
+console.log(filteredProvinces.length);// logging the count of the remaining provinces.
+
+//Boolean array using `map` and `some` to determine if a name contains the letter 'S'.
+const containsSArray = names.map((name) =>
+  name.split("").some((letter) => letter.toLowerCase() === "s")
+);
 
 
 
