@@ -29,13 +29,17 @@ provinces.forEach((province) => {
   console.log(province);
 });
 
+//ForEach Basics- loging each name with matching province in the format "Name (Province)".
+names.forEach((name, index) => {
+  console.log(`${name} (${provinces[index]})`);
+});
 
 // A list of products with prices:
 const products = [
-  { product: 'banana', price: "2" },
-  { product: 'mango', price: 6 },
-  { product: 'potato', price: ' ' },
-  { product: 'avocado', price: "8" },
-  { product: 'coffee', price: 10 },
-  { product: 'tea', price: '' },
-]
+  { product: "banana", price: "2" },
+  { product: "mango", price: 6 },
+  { product: "potato", price: " " },
+  { product: "avocado", price: "8" },
+  { product: "coffee", price: 10 },
+  { product: "tea", price: "" },
+];
