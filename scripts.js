@@ -58,6 +58,14 @@ const containsSArray = names.map((name) =>
 );
 console.log(containsSArray);
 
+//transforming the names array into an object mapping names to their respective provinces.
+const nameWithProvinceMap = names.reduce((acc, name, index) => {
+  acc[name] = provinces[index];
+  return acc;
+}, {});
+
+console.log(nameWithProvinceMap);
+
 
 
 
